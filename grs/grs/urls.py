@@ -24,5 +24,5 @@ router.register(r'Complaint', restapi.ComplaintViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('viewset/', include(router.urls)),
+    path('', include(router.urls)),
 ]
