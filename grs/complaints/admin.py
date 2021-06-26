@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Complaint, Feedback
+from .models import Complaint
 
 
 class ComplaitAdmin(admin.ModelAdmin):
@@ -9,9 +9,4 @@ class ComplaitAdmin(admin.ModelAdmin):
                     'complaint_for', 'user_role')
 
 
-class FeedbackAdmin(admin.ModelAdmin):
-    list_display = ('id', 'rating', 'description')
-
-
 admin.site.register(Complaint, ComplaitAdmin)
-admin.site.register(Feedback, FeedbackAdmin)
