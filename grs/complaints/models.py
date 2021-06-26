@@ -84,4 +84,3 @@ class Complaint(models.Model):
         default='P',
     )
     resoultion = models.TextField(blank=True, max_length=500)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
