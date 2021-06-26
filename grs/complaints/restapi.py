@@ -7,7 +7,7 @@ from rest_framework.authentication import (TokenAuthentication,
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
 
-class AssignmentViewSet(viewsets.ModelViewSet):
+class ComplaintViewSet(viewsets.ModelViewSet):
     serializer_class = ComplaintSerializer
     queryset = Complaint.objects.all()
     authentication_classes = (BasicAuthentication,
