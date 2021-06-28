@@ -7,4 +7,4 @@ class ComplaintSerializer(serializers.ModelSerializer):
     class Meta:
         model = Complaint
         fields = ['id', 'title', 'name', 'complaint_for', 'complaint_to',
-                  'cohort', 'level', 'description', 'category',]
+                  'cohort', 'level', 'description', 'category']

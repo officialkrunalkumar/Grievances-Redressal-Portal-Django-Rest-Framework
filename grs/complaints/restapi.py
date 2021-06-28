@@ -4,7 +4,8 @@ from .models import Complaint
 from rest_framework.authentication import (TokenAuthentication,
                                            BasicAuthentication,
                                            SessionAuthentication)
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import IsAuthenticated
+# AllowAny can be used
 
 
 class ComplaintViewSet(viewsets.ModelViewSet):
