@@ -1,10 +1,42 @@
 {
 	"info": {
-		"_postman_id": "d5b54a5e-d4c6-4e28-9717-b476001c3eba",
-		"name": "GRS REST API",
+		"_postman_id": "12b64774-c25f-4d79-a4a6-db5e6ac3ad58",
+		"name": "GRS REST API (Token Auth)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "Generate Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"krunalkumar\",\n    \"password\":\"krunalshah\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api-token-auth/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api-token-auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "GET All Complaint",
 			"event": [
@@ -30,25 +62,13 @@
 			},
 			"request": {
 				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "krunalshah",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "krunalkumar",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "GET",
 				"header": [
 					{
-						"key": "",
-						"value": "",
+						"key": "Authorization",
+						"value": "Token c80f1259802cbdc7497613dc557a055141b98aea",
 						"type": "text"
 					}
 				],
@@ -99,25 +119,13 @@
 			],
 			"request": {
 				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "krunalshah",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "krunalkumar",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "POST",
 				"header": [
 					{
-						"key": "",
-						"value": "",
+						"key": "Authorization",
+						"value": "Token c80f1259802cbdc7497613dc557a055141b98aea",
 						"type": "text"
 					}
 				],
@@ -149,7 +157,7 @@
 			"response": []
 		},
 		{
-			"name": "GET Specific Complaint ",
+			"name": "GET Specific Complaint",
 			"event": [
 				{
 					"listen": "test",
@@ -171,25 +179,13 @@
 			},
 			"request": {
 				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "krunalshah",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "krunalkumar",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "GET",
 				"header": [
 					{
-						"key": "",
-						"value": "",
+						"key": "Authorization",
+						"value": "Token c80f1259802cbdc7497613dc557a055141b98aea",
 						"type": "text"
 					}
 				],
@@ -241,25 +237,13 @@
 			],
 			"request": {
 				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "krunalshah",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "krunalkumar",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "PUT",
 				"header": [
 					{
-						"key": "",
-						"value": "",
+						"key": "Authorization",
+						"value": "Token c80f1259802cbdc7497613dc557a055141b98aea",
 						"type": "text"
 					}
 				],
@@ -292,7 +276,7 @@
 			"response": []
 		},
 		{
-			"name": "DELETE Specific Complaint ",
+			"name": "DELETE Specific Complaint",
 			"event": [
 				{
 					"listen": "test",
@@ -311,25 +295,13 @@
 			],
 			"request": {
 				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "krunalshah",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "krunalkumar",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "DELETE",
 				"header": [
 					{
-						"key": "",
-						"value": "",
+						"key": "Authorization",
+						"value": "Token c80f1259802cbdc7497613dc557a055141b98aea",
 						"type": "text"
 					}
 				],
